@@ -8,7 +8,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <!-- Navigation Section_________________________________________________________________________________________ -->
+    <!-- NAVIGATION SECTION _________________________________________________________________________________________ -->
     <nav id="desktop-nav">
       <div class="logo">John Doe</div>
       <div>
@@ -20,6 +20,108 @@
         </ul>
       </div>
     </nav>
+    <!-- NAVIGATION HAMBURGER MENU _________________________________________________________________________________________ -->
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <!-- Only JS function (Onclick function open/close menu) -->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Will show when onclick is active -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!--SECTIONS _________________________________________________________________________________________ -->
+    <!-- PROFILE SECTION_________________________________________________________________________________________ -->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="" id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree <br />M.Sc. Master Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In et
+              possimus architecto dolorem tempore velit atque tempora officia
+              aliquid expedita dicta cumque adipisci maxime, quos earum,
+              reiciendis quibusdam culpa, eos deleniti? Libero, ipsa ea magni
+              nam ratione rem ad aliquid? Cupiditate quasi inventore consectetur
+              rem tenetur illum aliquam, temporibus perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
