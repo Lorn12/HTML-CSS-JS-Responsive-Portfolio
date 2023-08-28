@@ -8,6 +8,11 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
 }
 
 /* <!-- @MEDIA MAX-WIDTH: 1200X_________________________________________________________________________________________ --> */
