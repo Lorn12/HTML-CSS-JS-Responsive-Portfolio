@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Lauren Wooten Frontend Developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <title>My Portfolio</title>
+    <title>Lauren Wooten - Frontend Developer</title>
   </head>
   <body>
     <!-- NAVIGATION SECTION _________________________________________________________________________________________ -->
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Lauren Wooten</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -25,14 +26,15 @@
               src-light="./assets/theme_light.png"
               src-dark="./assets/theme_dark.png"
               alt="Color theme icon"
+              title="Change Color Theme"
             />
           </li>
         </ul>
       </div>
     </nav>
     <!-- NAVIGATION HAMBURGER MENU _________________________________________________________________________________________ -->
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+    <nav id="hamburger-nav" title="hamburger-navigation">
+      <div class="logo">Lauren Wooten</div>
       <div class="hamburger-menu">
         <!-- Only JS function (Onclick function open/close menu) -->
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -64,11 +66,16 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img
+          class="profile-img"
+          src="./assets/LORN.jpg"
+          alt="Lauren Wooten profile picture"
+          title="Lauren Wooten"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
+        <h1 class="title">Lauren Wooten</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
@@ -94,9 +101,9 @@
             src="./assets/github_light.png"
             src-light="./assets/github_light.png"
             src-dark="./assets/github_dark.png"
-            alt="My Github Profile"
+            alt="Lauren Wooten Github Profile"
             class="icon github-icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/Lorn12'"
           />
         </div>
       </div>
@@ -108,8 +115,9 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
-            alt="Profile Picture"
+            src="./assets/LORN3.JPG"
+            alt="About Profile Picture"
+            title="Lauren Wooten"
             class="about-pic"
           />
         </div>
@@ -444,7 +452,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. all Rights Reserved</p>
+      <p>Copyright &#169; 2023 Lauren Wooten. all Rights Reserved</p>
     </footer>
     <script src="app.js"></script>
   </body>

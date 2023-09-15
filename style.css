@@ -221,6 +221,11 @@ section {
   margin: auto 0;
 }
 
+.profile-img {
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -331,6 +336,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  margin: 0 auto;
 }
 
 .arrow {

@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "HTML-CSS-JS-Responsive-Portfolio",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HTML-CSS-JS-Responsive-Portfolio"
+  }
+}
